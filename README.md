@@ -17,5 +17,5 @@ Change from my development environment and from GitHub
   or by checking trending food ranks from other delivery apps,
   or by relying on random pick from the app. 
 
-  ![Alt text](Adobe Scan 2023년 1월 28일.jpg)
+  ![Alt text](sketch.jpg)
 
