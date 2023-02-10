@@ -19,3 +19,5 @@ Change from my development environment and from GitHub
 
   ![Alt text](sketch.jpg)
 
+# Simon
+It was a great opportunity to work on Simon project since it covered the things we learned in the previous assignments. I now have a better understanding on structures, links, and tables with hands on experience.
