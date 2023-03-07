@@ -24,3 +24,6 @@ It was a great opportunity to work on Simon project since it covered the things 
 
 # Simon CSS
 In the past assignment, we programmed Simon buttons on HTML, and now we took those programs out of HTML and embedded to CSS code. The program itself is more simple and easier to understand. Also it has better visualization compared to just using HTML.
+
+# Simon JavaScript
+One of the most I learned by practicing this assignment was learning how to build Class structures. Also using with mp3 files was fun to learn.
