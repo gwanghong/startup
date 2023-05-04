@@ -1,8 +1,9 @@
 CS260 Spring Notes
 [a link](https://github.com/gwanghong/startup/blob/56910789136784b6247a91ac028732dbc887475c/notes.md)
 
+____________________________________________________
 Previous notes below
--------------------------------------------------
+____________________________________________________
 # startup
 github assignment
 modify 1
