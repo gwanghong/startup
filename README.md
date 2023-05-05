@@ -2,7 +2,7 @@ CS260 Spring Notes
 [notes.md](https://github.com/gwanghong/startup/blob/56910789136784b6247a91ac028732dbc887475c/notes.md)
 
 ____________________________________________________
-<b> Previous notes below (from Winter Class) </b>
+Previous notes below (from Winter Class)
 ____________________________________________________
 # startup
 github assignment
