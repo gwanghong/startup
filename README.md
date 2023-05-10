@@ -32,9 +32,9 @@ CS260 Spring Notes
 * React -       Haven't learned yet
 ## HTML deliverable
 * HTML pages - Total of 4 pages: login, welcome page (Home), vote, trending
-* Links - After logging in (page1), this will automatically lead to Welcome Page (page2)
-* Text - 
+* Links - After logging in (page1), this will automatically lead to Welcome Page (page2). Home/Vote/Trending button leading to that html page.
 * Images - It would be a good idea to add images of each menus and display right next to it.
+* Add/Remove - Input box and add/remove button
 * Login - Input box and sign-in button
 * Database - menus that are listed
 * WebSocket - The total count of votes, and chat.
