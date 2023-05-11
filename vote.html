@@ -39,19 +39,20 @@
                     <tr>
                       <td>1</td>
                       <td>Burgers</td>
-                      <td>12</td>
+                      <td>12 <button type="vote">Vote</button></td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>Indian Food</td>
-                      <td>11</td>
+                      <td>11 <button type="vote">Vote</button></td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>Korean Food</td>
-                      <td>10</td>
+                      <td>10 <button type="vote">Vote</button></td>
                     </tr>
                   </tbody>
+                  <button type="add">Add</button> <button type="remove">Remove</button>
                 </table>
               </section>
           
@@ -69,25 +70,74 @@
                     <tr>
                       <td>1</td>
                       <td>Chick-fil-A</td>
-                      <td>15</td>
+                      <td>15 <button type="vote">Vote</button></td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>McDonalds</td>
-                      <td>9</td>
+                      <td>9 <button type="vote">Vote</button></td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>BurgerKing</td>
-                      <td>5</td>
+                      <td>5 <button type="vote">Vote</button></td>
                     </tr>
                   </tbody>
+                  <button type="add">Add</button> <button type="remove">Remove</button>
                 </table>
               </section>
             </div>
-          
-          </body>
+            
 
+            <div class="chat-history">
+              <ul>
+                <li>
+                  <div class="message-data">
+                    <span class="message-data-name"><i class="fa fa-circle online"></i> Tom</span>
+                    <span class="message-data-time">10:10 AM, Today</span>
+                  </div>
+                  <div class="message other-message float-right">
+                    Hey guys, What are we eating for lunch?
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="message-data">
+                    <span class="message-data-name"><i class="fa fa-circle online"></i> Mary</span>
+                    <span class="message-data-time">10:12 AM, Today</span>
+                  </div>
+                  <div class="message my-message">
+                    I was thinking of Yummy's
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="message-data">
+                    <span class="message-data-name"><i class="fa fa-circle online"></i> John</span>
+                    <span class="message-data-time">10:14 AM, Today</span>
+                  </div>
+                  <div class="message other-message float-right">
+                    I heard there is a new Indian restaurant just opened a week ago!
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="message-data">
+                    <span class="message-data-name"><i class="fa fa-circle online"></i> Elliot</span>
+                    <span class="message-data-time">10:15 AM, Today</span>
+                  </div>
+                  <div class="message my-message">
+                    I think it would be better to have those as dinner rather than lunch.
+                  </div>
+                </li>
+                <div class="chat-message">
+                  <textarea name="message-to-send"
+                  id="message-to-send" 
+                  placeholder="Type your message"></textarea>
+                </div>
+              </ul>
+            </div>
+          
         <footer>
             <hr />
             <span class="text-reset">Gwanghong's startup repo</span>
