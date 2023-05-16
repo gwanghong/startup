@@ -16,22 +16,20 @@
     />
     </head>
     <body>
-        <h1>Menu Voter</h1>
-        <form action="welcome.html" method="get">
-            <ul>
-                <li>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="welcome.html" method="get">
+                <div class="user-input">
                     <label for="Username">Username: </label>
                     <input type="Username" id="Username" placeholder="your Username here" required pattern="*" name="varUsername" />
-
-                </li>
-                <li>
+                </div>
+                <div class="user-input">
                     <label for="password">Password: </label>
                     <input type="password" id="password" placeholder="your password here" required pattern="*" name="varPassword" />
-                </li>
-            </ul>
-
-            <button type="submit">Submit</button>
-        </form>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
 
     </body>
 </html>
