@@ -12,10 +12,17 @@ body {
     min-width: 400px;
 }
 
+header {
+    color: white;
+}
+
 h2 {
     flex: 0 80px;
-    background-color: blueviolet;
+    background-color: rgb(84, 29, 134);
     color: white;
+    text-align: center;
+    margin: 0 0 30px;
+    padding: 0;
 }
 
 .login-box {
