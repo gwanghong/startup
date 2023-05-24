@@ -1,5 +1,5 @@
 CS260 Spring Notes
-[notes.md](https://github.com/gwanghong/startup/blob/56910789136784b6247a91ac028732dbc887475c/notes.md)
+[notes.md](https://github.com/gwanghong/startup/blob/main/notes.md)
 
 # Menu Voter
   ## Elevator pitch
