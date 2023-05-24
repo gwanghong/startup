@@ -28,3 +28,5 @@ filter:	Run a function to remove items	a.filter(i => i%2)
 every:	Run a function to test if all items match	a.every(i => i < 3)
 
 some:	Run a function to test if any items match	a.some(i => 1 < 1)
+
+# Fix
