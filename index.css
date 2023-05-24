@@ -29,7 +29,6 @@ menu .nav-item {
     padding: 0 0.3em;
 }
 
-
 h2 {
     flex: 0 80px;
     background-color: rgb(84, 29, 134);
@@ -53,8 +52,35 @@ h2 {
 }
 
 .login-box .user-input {
-    margin: 0 0 30px;
-    padding: 0;
+    position: relative;
+  }
+  
+  .login-box .user-input input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
     color: #fff;
-    text-align: center;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-input label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+.login-box .user-input input:focus ~ label,
+.login-box .user-input input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
 }
