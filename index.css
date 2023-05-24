@@ -18,22 +18,17 @@ menu {
     /*  overwrite Bootstrap so the menu does not wrap */
     flex-direction: row !important;
     list-style: none;
-  }
+}
 
-  .navbar-brand {
+.navbar-brand {
     padding-left: 0.3em;
     border-bottom: solid rgb(182, 182, 182) thin;
-  }
-  
-  menu .nav-item {
-    padding: 0 0.3em;
-  }
-
-
-.header-link {
-    color: white;
-    font-size: 24px;
 }
+  
+menu .nav-item {
+    padding: 0 0.3em;
+}
+
 
 h2 {
     flex: 0 80px;
