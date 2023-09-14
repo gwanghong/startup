@@ -1,5 +1,5 @@
 
-[a relative link](README.md)
+[to Readme File](README.md)
 # GITHUB
 
 PUSH:   (git add) -> git commit -am "" -> git push
