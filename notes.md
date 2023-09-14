@@ -1,3 +1,5 @@
+
+[a relative link](README.md)
 # GITHUB
 
 PUSH:   (git add) -> git commit -am "" -> git push
