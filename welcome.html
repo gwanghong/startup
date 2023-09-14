@@ -6,7 +6,7 @@
         <title>Menu Voter</title>
         <link rel="icon" href="foodicon2.ico" />
 
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="welcome.css" />
 
         <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -15,19 +15,18 @@
       crossorigin="anonymous"
     />
     </head>
-    
+
     <body>
         <header>
-            <h1>Welcome Gwanghong Ahn!</h1>
 
             <nav class="navbar fixed-top navbar-dark">
                 <a class="navbar-brand" href="#">Menu Selector<sup>&reg;</sup></a>
                 <menu class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Login</a>
+                    <a class="nav-link" href="index.html">Login</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="welcome.html">Home</a>
+                    <a class="nav-link active" href="welcome.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="vote.html">Vote</a>
@@ -38,12 +37,12 @@
                 </menu>
               </nav>
 
-            <hr />
         </header>
 
-        <form action="vote.html" method="get">
-            <button type="vote">Go to Vote!</button>
-        </form>
+        <div>
+            <p>Welcome Gwanghong Ahn</p>
+            <a class="btn btn-warning" href="vote.html" role="button">Go to Vote</a>
+        </div>
 
         <footer>
             <hr />
