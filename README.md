@@ -1,4 +1,4 @@
-CS260 Spring Notes
+CS260 Notes
 [notes.md](https://github.com/gwanghong/startup/blob/main/notes.md)
 
 # Menu Voter
