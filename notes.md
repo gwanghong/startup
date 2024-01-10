@@ -6,6 +6,11 @@ PUSH:   (git add) -> git commit -am "" -> git push
 
 PULL:   git fetch -> git status -> git pull
 
+Heading for markdown files
+#: first level heading
+##: second level
+###: third level
+
 # JavaScript
 push:	Add an item to the end of the array	a.push(4)
 
