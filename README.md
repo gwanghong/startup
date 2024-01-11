@@ -3,19 +3,17 @@ CS260 Notes
 
 # Aim bot
   ## Elevator pitch
-  Somedays, there will be days when it feels like it's not your day on fps games like Call of duty, Pubg, etc.
-  By praticing on this Aim bot web page, it will make you a pro on fps games.
-  Players can compare their scores and aim to become the top aim bot.
+ Somedays, there will be days when it feels like it's not your day on fps games like Call of Duty, Pubg, etc. Practicing on this Aim bot web page, will make you a pro on fps games. Players can compare their scores and aim to become the top aim bot.
 ## Design
   ![Alt text](sketch_scan.JPG)
 
 ## Key features
 * Secure login over HTTPS
 * Storing high scores of all players
-* 
-* 
-* 
-* 
+* Displaying time and current score board while playing the game
+* Storing and showing scores of top players
+* Ability to communicate with other users through Review page
+
 ## Technologies
 * HTML -        Haven't learned yet
 * CSS -         Haven't learned yet
