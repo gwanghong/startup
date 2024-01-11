@@ -7,7 +7,7 @@ CS260 Notes
   By praticing on this Aim bot web page, it will make you a pro on fps games.
   Players can compare their scores and aim to become the top aim bot.
 ## Design
-  ![Alt text](sketch_scan.jpg)
+  ![Alt text](sketch_scan.JPG)
 
 ## Key features
 * Secure login over HTTPS
