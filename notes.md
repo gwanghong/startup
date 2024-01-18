@@ -1,5 +1,8 @@
 
 [to Readme File](README.md)
+
+# My allocated ip address: 34.231.37.173
+
 # GITHUB
 
 PUSH:   (git add) -> git commit -am "" -> git push
