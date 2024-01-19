@@ -1,7 +1,7 @@
 
 [to Readme File](README.md)
 
-#HTTPS
+# HTTPS
 secure version of HTTP is called Secure Hypertext Transport Protocol (HTTPS)
 Having a secure connection means that all the data is encrypted using the TLS protocol. TLS is sometimes referred to by a now unsecure predecessor protocol named SSL. TLS works by negotiating a shared secret that is then used to encrypt data.
 
