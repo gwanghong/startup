@@ -1,6 +1,20 @@
 
 [to Readme File](README.md)
 
+# CSS Selectors
+<Combinators>
+Descendant: body section
+Child: section > p
+General sibling: p ~ div
+Adjacent sibling: p + div
+
+<Class_selector>
+.summary or p.summary
+
+<ID_selector>
+#physics
+
+
 # HTTPS
 secure version of HTTP is called Secure Hypertext Transport Protocol (HTTPS)
 Having a secure connection means that all the data is encrypted using the TLS protocol. TLS is sometimes referred to by a now unsecure predecessor protocol named SSL. TLS works by negotiating a shared secret that is then used to encrypt data.
