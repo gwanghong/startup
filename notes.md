@@ -5,6 +5,7 @@
 console.time();
 console.timeEnd();
 OUTPUT the duration time between time() and timeEnd()
+ === (equality)
 
 console.count();
 
