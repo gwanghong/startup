@@ -1,6 +1,13 @@
 
 [to Readme File](README.md)
 
+# JavaScript
+console.time();
+console.timeEnd();
+OUTPUT the duration time between time() and timeEnd()
+
+console.count();
+
 # CSS Selectors
 <Combinators>
 Descendant: body section
