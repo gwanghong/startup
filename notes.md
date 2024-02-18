@@ -1,6 +1,14 @@
 
 [to Readme File](README.md)
 
+# Document Object Model
+The Document Object Model (DOM) is an object representation of the HTML elements that the browser uses to render the display
+
+
+# JSON
+JSON document contains an object. Objects contain zero or more key value pairs. The key is always a string, and the value must be one of the valid JSON data types.
+You can convert JSON to, and from, JavaScript using the JSON.parse and JSON.stringify functions.
+
 # JavaScript
 console.time();
 console.timeEnd();
