@@ -3,12 +3,12 @@
 
 # The internet
 Dig: You can look up the IP address for any domain name using the dig console utility.
-Network internals
-Layer	| Example |	Purpose
-Application	HTTPS	Functionality like web browsing
-Transport	TCP	Moving connection information packets
-Internet	IP	Establishing connections
-Link	Fiber, hardware	Physical connections
+Network internals<br>
+Layer	| Example |	Purpose<br>
+Application	HTTPS	Functionality like web browsing<br>
+Transport	TCP	Moving connection information packets<br>
+Internet	IP	Establishing connections<br>
+Link	Fiber, hardware	Physical connections<br>
 
 # Document Object Model
 The Document Object Model (DOM) is an object representation of the HTML elements that the browser uses to render the display
