@@ -1,5 +1,7 @@
 
 [to Readme File](README.md)
+# Domain names
+Domain names are broken up into a root domain, with one or more possible subdomain prefixes. The root domain is represented by a secondary level domain and a top level domain. The top level domain (TLD) represent things like com, edu, or click. So a root domain would look something like byu.edu, google.com, or cs260.click.
 
 # The internet
 Dig: You can look up the IP address for any domain name using the dig console utility.
