@@ -1,6 +1,9 @@
 
 [to Readme File](README.md)
 
+# Port
+Port numbers allow a single device to support multiple protocols (e.g. HTTP, HTTPS, FTP, or SSH) as well as different types of services (e.g. search, document, or authentication). The ports may be exposed externally, or they may only be used internally on the device
+
 # URL
 | Part        | Example                              | Meaning                                                                                                                                                                                                                                                                             |
 | ----------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
