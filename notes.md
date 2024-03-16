@@ -2,11 +2,11 @@
 [to Readme File](README.md)
 
 # Service design
-Leveraging HTTP
+### Leveraging HTTP
 The HTTP verbs such as GET, POST, PUT, and DELETE 
 For example, a web service for managing comments might list the comments (GET), create a comment (POST), update a comment (PUT), and delete a comment (DELETE). 
 
-#Endpoints#
+### Endpoints
 Grammatical - With HTTP everything is a resource (think noun or object). You act on the resource with an HTTP verb. For example, you might have an order resource that is contained in a store resource. You then create, get, update, and delete order resources on the store resource.
 
 Readable - The resource you are referencing with an HTTP request should be clearly readable in the URL path. For example, an order resource might contain the path to both the order and store where the order resource resides: /store/provo/order/28502. This makes it easier to remember how to use the endpoint because it is human readable.
@@ -22,8 +22,15 @@ Documented - The Open API Specification is a good example of tooling that helps 
 
 There are many models for exposing endpoints. We will consider three common ones, RPC, REST, and GraphQL.
 
+#### RPC
+Remote Procedure Calls (RPC) expose service endpoints as simple function calls.
+One advantage of RPC is that it maps directly to function calls that might exist within the server. This could also be considered a disadvantage as it directly exposes the inner workings of the service, and thus creates a coupling between the endpoints and the implementation.
 
-## RPC
+#### REST
+Representational State Transfer (REST)
+
+### GraphQL
+GraphQL focuses on the manipulation of data instead of a function call (RPC) or a resource (REST). 
 
 # SOP and CORS
 Same Origin Policy (SOP)
