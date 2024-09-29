@@ -1,21 +1,21 @@
 CS260 Notes
 [notes.md](https://github.com/gwanghong/startup/blob/main/notes.md)
 
-# Aim bot
+# Michelin Guide
   ## Elevator pitch
- Somedays, there will be days when it feels like it's not your day on fps games like Call of Duty, Pubg, etc. Practicing on this Aim bot web page, will make you a pro on fps games. Players can compare their scores and aim to become the top aim bot.
+ I'm building a website that allows food enthusiasts to easily discover and save Michelin Star restaurants they want to visit. Users can browse a curated list of top-rated dining spots, add their favorites to a personalized cart, and revisit them later to plan their next culinary adventure.
 ## Design
   ![Alt text](sketch_scan.JPG)
 
 ## Key features
 * Secure login over HTTPS
-* Storing high scores of all players
-* Displaying time and current score board while playing the game
-* Storing and showing scores of top players by points and accuracy
-* Ability to communicate with other users through Review page
+* Listing Michelin Star Restaurants
+* Storing, removing and displaying Restaurant lists that are saved in Cart
+* Totals from lists saved in Cart
+* Ability to leave reviews of there own experience they had at the restaurant.
 
 ## Technologies
-* HTML -        Using four html files. 1st page for login, 2nd page for playing the game, 3rd page for score leaderboard, and last page for review/comment section.
+* HTML -        Using four html files. 1st page for login, 2nd page for listing info of restaurants, 3rd page for Cart showing lists that are saved, and last page for review/comment section.
 * CSS -         Haven't learned yet
 * JavaScript -  Haven't learned yet
 * Service -     Haven't learned yet
@@ -24,11 +24,11 @@ CS260 Notes
 * React -       Haven't learned yet
 
 ## HTML deliverable
-* HTML pages - Four html pages that has the ability to Login, Play, track scores of top players and communicate with others through review/comment page.
-* Links - From Login page to Play page
+* HTML pages - Four html pages that has the ability to Login, List, Save, and communicate with others through review/comment page.
+* Links - From Login page to List page
 * Text - Short textual introduction of this application at Review page.
-* Images - Image for reveiw page
-* DB/Login - Input box and submit box for Login. Score, accuracy and date data is stored and if the player got in top 5, his/her data is pulled from database and will become visible on the score board.
+* Images - Image for Restaurants, review Page
+* DB/Login - Input box and submit box for Login. Add to cart and remove button to add or remove lists from cart.
 * WebSocket - Realtime comments
 
 ## CSS deliverable
