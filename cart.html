@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Michelin Guide Cart</title>
-        <link rel="icon" href="Michelin_guide_logo.ico" />
+        <link rel="icon" href="michelin_guide_logo.ico" />
     </head>
     <body>
       <header>
@@ -20,58 +20,40 @@
         <hr />
       </header>
 
-      <main>
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Score</th>
-              <th>Accuracy</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Caitlyn</td>
-              <td>100</td>
-              <td>100%</td>
-              <td>Jan 20, 24</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>V</td>
-              <td>61</td>
-              <td>95%</td>
-              <td>Jan 21, 24</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Gunner</td>
-              <td>55</td>
-              <td>96%</td>
-              <td>Jan 1, 24</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Newbie</td>
-              <td>55</td>
-              <td>88%</td>
-              <td>Jan 16, 24</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Tom</td>
-              <td>43</td>
-              <td>96%</td>
-              <td>Jan 19, 24</td>
-            </tr>
-          </tbody>
-        </table>
-      </main>
+      <!-- Cart Item 1 -->
+      <div class="cart-item">
+        <div class="restaurant-details">
+          <img src="Addison.jpg" alt="Addison" width="200" height="200">
 
-      <hr/>
+            <h3>Addison</h3>
+            <p>⭐ 3</p>
+            <p>San Diego, USA</p>
+            <p>Cost: $$$$</p>
+            <p>Contemporary</p>
+        </div>
+        <div class="remove-from-cart">
+            <button>Remove</button>
+        </div>
+      </div>
+
+      <!-- Cart Item 2 -->
+      <div class="cart-item">
+        <div class="restaurant-details">
+          <img src="Bruto.jpg" alt="Bruto" width="200" height="200">
+            <h3>Bruto</h3>
+            <p>⭐ 1</p>
+            <p>Denver, USA</p>
+            <p>Cost: $$$$</p>
+            <p>Mexican</p>
+        </div>
+        <div class="remove-from-cart">
+            <button>Remove</button>
+        </div>
+      </div>
+
+      <!-- Placeholder for total -->
+      <h2>Total Restaurants: 2</h2>
+
 
       <footer>
         <span class="text-reset">Gwanghong Ahn</span>

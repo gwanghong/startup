@@ -21,34 +21,71 @@
       </header>
 
       <main>
-        <br />
-        <div clss="time"> 
-          <label for="time"></label> Time: 
-          <input type="text" id="time" value="43" readonly/>
-          s
+        <div class="players">
+          Welcome
+          <span class="player-name">Mystery Guest</span>
         </div>
-        <div class="accuracy"> 
-          <label for="accuracy"></label> Accuracy: 
-          <input type="text" id="accuracy" value="85" readonly/>
-          %
-        </div>
-        <div clss="score">
-         <label for="score"></label>  Score:
-         <input type="text" id="score" value="8" readonly/>
-        </div>
-
-        <br />
-
-        <div>
-          <button>Restart</button>
-        </div>
-
-        <p>will add the game_board after learning css</p>
-        <div class="play-screen"></div>
-
       </main>
 
-      <hr/>
+      <div class="container">
+        <!-- Restaurant Card 1 -->
+        <div class="restaurant-card">
+            <div class="restaurant-info">
+                <img src="AlmaFondaFina.jpg" alt="Alma Fonda Fina" width="200" height="200">
+                <div class="restaurant-details">
+                    <h3>Alma Fonda Fina</h3>
+                    <p>⭐ 1</p>
+                    <p>Denver, USA</p>
+                    <p>Cost: $$</p>
+                    <p>Mexican</p>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button onclick="addToCart('Alma Fonda Fina')">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 2 -->
+        <div class="restaurant-card">
+            <div class="restaurant-info">
+                <img src="Bruto.jpg" alt="Bruto" width="200" height="200">
+                <div class="restaurant-details">
+                    <h3>Bruto</h3>
+                    <p>⭐ 1</p>
+                    <p>Denver, USA</p>
+                    <p>Cost: $$$$</p>
+                    <p>Mexican</p>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button onclick="addToCart('Bruto')">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 3 -->
+        <div class="restaurant-card">
+            <div class="restaurant-info">
+                <img src="Addison.jpg" alt="Addison" width="200" height="200">
+                <div class="restaurant-details">
+                    <h3>Addison</h3>
+                    <p>⭐ 3</p>
+                    <p>San Diego, USA</p>
+                    <p>Cost: $$$$</p>
+                    <p>Contemporary</p>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button onclick="addToCart('Addison')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(restaurantName) {
+            alert(restaurantName + " has been added to your cart!");
+            // Logic for adding to cart can go here
+        }
+    </script>
 
       <footer>
         <span class="text-reset">Gwanghong Ahn</span>
