@@ -16,7 +16,7 @@ CS260 Notes
 
 ## Technologies
 * HTML -        Using four html files. 1st page for login, 2nd page for listing info of restaurants, 3rd page for Cart showing lists that are saved, and last page for review/comment section.
-* CSS -         Haven't learned yet
+* CSS -         Color and Styling that fits with MICHELIN. Applied flex, hover, bootstrap, etc.
 * JavaScript -  Haven't learned yet
 * Service -     Haven't learned yet
 * DB/Login -    Haven't learned yet
@@ -32,6 +32,12 @@ CS260 Notes
 * WebSocket - Realtime comments
 
 ## CSS deliverable
+* Header, footer, and main content body - Using consistent headers and footers across all pages.
+* Navigation elements - Anchor elements with black and red colors
+* Responsive to window resizing - Adapting to window resizing. It will hide footer and header when shrinked.
+* Application elements - Restaurant lists and reviews would appear like a card.
+* Application text content - Consistant font with highlighted colors.
+* Application images - All list images are styled to look more professional.
 
 ## JavaScript deliverable
 
