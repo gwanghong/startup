@@ -135,4 +135,9 @@ every:	Run a function to test if all items match	a.every(i => i < 3)
 
 some:	Run a function to test if any items match	a.some(i => 1 < 1)
 
-# Fix
+# React
+The render function: Whatever is returned from the render function is inserted into the component HTML element.
+
+State: Component state is created by calling the React.useState hook function. The useState function returns a variable that contains the current state and a function to update the state.
+
+Router: A web framework router provides essential functionality for single-page applications. With a multiple-webpage application the headers, footers, navigation, and common components must be either duplicated in each HTML page, or injected before the server sends the page to the browser. React does not have a standard router package, and there are many that you can choose from. 
