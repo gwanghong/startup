@@ -1,63 +1,72 @@
 import React, { useState } from 'react';
-import './app.css';
 import './cart.css';
 
-const Cart = () => {
-  const [cartItems, setCartItems] = useState([
+export function Cart() {
+  const initialCartItems = [
     {
-      id: 1,
       name: 'Addison',
+      image: 'Addison.jpg',
       stars: 3,
       location: 'San Diego, USA',
       cost: '$$$$',
       cuisine: 'Contemporary',
-      image: 'Addison.jpg',
     },
     {
-      id: 2,
       name: 'Bruto',
+      image: 'Bruto.jpg',
       stars: 1,
       location: 'Denver, USA',
       cost: '$$$$',
       cuisine: 'Mexican',
-      image: 'Bruto.jpg',
     },
-  ]);
+  ];
 
-  const handleRemove = (id) => {
-    setCartItems(cartItems.filter(item => item.id !== id));
+  const [cartItems, setCartItems] = useState(initialCartItems);
+
+  const removeFromCart = (restaurantName) => {
+    setCartItems(cartItems.filter((item) => item.name !== restaurantName));
   };
 
   return (
-    <div className="cart">
+    <div className="body">
       <header>
         <h1>Michelin Star Cart</h1>
         <nav>
           <menu>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="list.html">List</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="review.html">Review</a></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/list">List</a>
+            </li>
+            <li>
+              <a href="/cart">Cart</a>
+            </li>
+            <li>
+              <a href="/review">Review</a>
+            </li>
           </menu>
         </nav>
         <hr />
       </header>
 
-      {cartItems.map(item => (
-        <div className="cart-item" key={item.id}>
-          <div className="restaurant-details">
-            <img src={item.image} alt={item.name} width="200" height="200" />
-            <h3>{item.name}</h3>
-            <p>⭐ {item.stars}</p>
-            <p>{item.location}</p>
-            <p>Cost: {item.cost}</p>
-            <p>{item.cuisine}</p>
+      <div>
+        {cartItems.map((item) => (
+          <div className="cart-item" key={item.name}>
+            <div className="restaurant-details">
+              <img src={item.image} alt={item.name} width="200" height="200" />
+              <h3>{item.name}</h3>
+              <p>⭐ {item.stars}</p>
+              <p>{item.location}</p>
+              <p>Cost: {item.cost}</p>
+              <p>{item.cuisine}</p>
+            </div>
+            <div className="remove-from-cart">
+              <button onClick={() => removeFromCart(item.name)}>Remove</button>
+            </div>
           </div>
-          <div className="remove-from-cart">
-            <button onClick={() => handleRemove(item.id)}>Remove</button>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       <h2>Total Restaurants: {cartItems.length}</h2>
 
@@ -67,6 +76,4 @@ const Cart = () => {
       </footer>
     </div>
   );
-};
-
-export default Cart;
+}
