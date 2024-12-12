@@ -17,7 +17,8 @@ CS260 Notes
 ## Technologies
 * HTML -        Using four html files. 1st page for login, 2nd page for listing info of restaurants, 3rd page for Cart showing lists that are saved, and last page for review/comment section.
 * CSS -         Color and Styling that fits with MICHELIN. Applied flex, hover, bootstrap, etc.
-* React -       Haven't learned yet
+* React -       Implements login system, displays a list of 
+restaurants, allows adding items to cart, submitting and viewing user reviews, and manages state by using React hooks. Utilizes React Router for naviating between pages.
 * Service -     Haven't learned yet
 * DB/Login -    Haven't learned yet
 * WebSocket -   Haven't learned yet
@@ -39,12 +40,15 @@ CS260 Notes
 * Application images - All list images are styled to look more professional.
 
 ## React deliverable
+For this deliverable, I used JavaScript and React to create a functional application that allows users to interact with restaurant data.
 * Bundled and traspiled - done
-* Components - 
-    login - 
-    database - 
-* Router - 
-* Hooks - 
+* Components
+    Login - Handles user auth. User can login and access to list and other components.
+    List - User can add items to the cart.
+    Cart - Shows the restaurants added by the user. Items can be removed. Cart data is stored and retrieved from localStorage.
+    Review - Displays existing reviews and allows users to submit new reviews. Reviews are rendered in real-time.
+* Router - Navigation between Login, List, Cart and Review components
+* Hooks - Uses useState to manage state across componets, such as auth, cart items, and reviews.
 
 ## Service deliverable
 
