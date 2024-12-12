@@ -25,26 +25,6 @@ export function Review() {
 
   return (
     <div className="body">
-      <header>
-        <h1>Michelin Star Cart</h1>
-        <nav>
-          <menu>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/list">List</a>
-            </li>
-            <li>
-              <a href="/cart">Cart</a>
-            </li>
-            <li>
-              <a href="/review">Review</a>
-            </li>
-          </menu>
-        </nav>
-        <hr />
-      </header>
 
       <main>
         <div className="introduction">
@@ -71,11 +51,6 @@ export function Review() {
           </div>
         ))}
       </main>
-
-      <footer>
-        <span className="text-reset">Gwanghong Ahn</span>
-        <a href="https://github.com/gwanghong/startup.git">GitHub</a>
-      </footer>
     </div>
   );
 }

@@ -25,26 +25,6 @@ export function Cart() {
 
   return (
     <div className="body">
-      <header>
-        <h1>Michelin Star Cart</h1>
-        <nav>
-          <menu>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/list">List</a>
-            </li>
-            <li>
-              <a href="/cart">Cart</a>
-            </li>
-            <li>
-              <a href="/review">Review</a>
-            </li>
-          </menu>
-        </nav>
-        <hr />
-      </header>
 
       <main className="container">
         {cartItems.length ? (
@@ -75,11 +55,6 @@ export function Cart() {
         )}
         <h2>Total Restaurants: {cartItems.length}</h2>
       </main>
-
-      <footer>
-        <span className="text-reset">Gwanghong Ahn</span>
-        <a href="https://github.com/gwanghong/startup.git">GitHub</a>
-      </footer>
     </div>
   );
 }
