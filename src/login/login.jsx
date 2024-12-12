@@ -14,15 +14,7 @@ export function Login({ userName, authState, onAuthChange }) {
             <li>
               <a href="/">Home</a>
             </li>
-            <li>
-              <a href="/list">List</a>
-            </li>
-            <li>
-              <a href="/cart">Cart</a>
-            </li>
-            <li>
-              <a href="/review">Review</a>
-            </li>
+
           </menu>
         </nav>
         <hr />

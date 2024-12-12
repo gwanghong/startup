@@ -1,7 +1,9 @@
 import React from 'react';
 import './list.css';
 
-export function List() {
+export function List(props) {
+  const userName = props.userName;
+
   const restaurants = [
     {
       name: 'Alma Fonda Fina',
@@ -29,9 +31,17 @@ export function List() {
     },
   ];
 
-  const addToCart = (restaurantName) => {
-    alert(`${restaurantName} has been added to your cart!`);
-    // Logic for adding to cart can go here
+  const addToCart = (restaurant) => {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Check if the item already exists in the cart
+    if (!cartItems.find((item) => item.name === restaurant.name)) {
+      cartItems.push(restaurant);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      alert(`${restaurant.name} has been added to your cart!`);
+    } else {
+      alert(`${restaurant.name} is already in your cart!`);
+    }
   };
 
   return (
@@ -60,7 +70,7 @@ export function List() {
       <main>
         <div className="players">
           Welcome
-          <span className="player-name"> Mystery Guest</span>
+          <span className="player-name"> {userName} </span>
         </div>
       </main>
 
@@ -78,7 +88,7 @@ export function List() {
               </div>
             </div>
             <div className="add-to-cart">
-              <button onClick={() => addToCart(restaurant.name)}>Add to Cart</button>
+              <button onClick={() => addToCart(restaurant)}>Add to Cart</button>
             </div>
           </div>
         ))}

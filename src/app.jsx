@@ -30,7 +30,7 @@ function App() {
               />
             }
           />
-          <Route path="/list" element={<List />} />
+          <Route path="/list" element={<List userName={userName}/>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/review" element={<Review />} />
           <Route path="*" element={<NotFound />} />

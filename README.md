@@ -17,11 +17,10 @@ CS260 Notes
 ## Technologies
 * HTML -        Using four html files. 1st page for login, 2nd page for listing info of restaurants, 3rd page for Cart showing lists that are saved, and last page for review/comment section.
 * CSS -         Color and Styling that fits with MICHELIN. Applied flex, hover, bootstrap, etc.
-* JavaScript -  Haven't learned yet
+* React -       Haven't learned yet
 * Service -     Haven't learned yet
 * DB/Login -    Haven't learned yet
 * WebSocket -   Haven't learned yet
-* React -       Haven't learned yet
 
 ## HTML deliverable
 * HTML pages - Four html pages that has the ability to Login, List, Save, and communicate with others through review/comment page.
@@ -39,12 +38,16 @@ CS260 Notes
 * Application text content - Consistant font with highlighted colors.
 * Application images - All list images are styled to look more professional.
 
-## JavaScript deliverable
+## React deliverable
+* Bundled and traspiled - done
+* Components - 
+    login - 
+    database - 
+* Router - 
+* Hooks - 
 
 ## Service deliverable
 
 ## DB/Login deliverable
 
 ## WebSocket deliverable
-
-## React deliverable

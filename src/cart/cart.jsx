@@ -1,30 +1,26 @@
-import React, { useState } from 'react';
-import './cart.css';
+import React, { useState, useEffect } from 'react';
+import '../list/list.css'; // Use list.css for consistent styling
 
 export function Cart() {
-  const initialCartItems = [
-    {
-      name: 'Addison',
-      image: 'Addison.jpg',
-      stars: 3,
-      location: 'San Diego, USA',
-      cost: '$$$$',
-      cuisine: 'Contemporary',
-    },
-    {
-      name: 'Bruto',
-      image: 'Bruto.jpg',
-      stars: 1,
-      location: 'Denver, USA',
-      cost: '$$$$',
-      cuisine: 'Mexican',
-    },
-  ];
+  const [cartItems, setCartItems] = useState([]);
 
-  const [cartItems, setCartItems] = useState(initialCartItems);
+  // Load cart items from localStorage when the component mounts
+  useEffect(() => {
+    const cartText = localStorage.getItem('cartItems');
+    if (cartText) {
+      setCartItems(JSON.parse(cartText));
+    }
+  }, []);
 
+  // Save cart items to localStorage whenever the cartItems state changes
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
+
+  // Remove an item from the cart
   const removeFromCart = (restaurantName) => {
-    setCartItems(cartItems.filter((item) => item.name !== restaurantName));
+    const updatedCart = cartItems.filter((item) => item.name !== restaurantName);
+    setCartItems(updatedCart);
   };
 
   return (
@@ -50,25 +46,35 @@ export function Cart() {
         <hr />
       </header>
 
-      <div>
-        {cartItems.map((item) => (
-          <div className="cart-item" key={item.name}>
-            <div className="restaurant-details">
-              <img src={item.image} alt={item.name} width="200" height="200" />
-              <h3>{item.name}</h3>
-              <p>⭐ {item.stars}</p>
-              <p>{item.location}</p>
-              <p>Cost: {item.cost}</p>
-              <p>{item.cuisine}</p>
+      <main className="container">
+        {cartItems.length ? (
+          cartItems.map((item) => (
+            <div className="restaurant-card" key={item.name}>
+              <div className="restaurant-info">
+                <img src={item.image} alt={item.name} width="200" height="200" />
+                <div className="restaurant-details">
+                  <h3>{item.name}</h3>
+                  <p>⭐ {item.stars}</p>
+                  <p>{item.location}</p>
+                  <p>Cost: {item.cost}</p>
+                  <p>{item.cuisine}</p>
+                </div>
+              </div>
+              <div className="add-to-cart">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => removeFromCart(item.name)}
+                >
+                  Remove
+                </button>
+              </div>
             </div>
-            <div className="remove-from-cart">
-              <button onClick={() => removeFromCart(item.name)}>Remove</button>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <h2>Total Restaurants: {cartItems.length}</h2>
+          ))
+        ) : (
+          <h2>Your cart is empty</h2>
+        )}
+        <h2>Total Restaurants: {cartItems.length}</h2>
+      </main>
 
       <footer>
         <span className="text-reset">Gwanghong Ahn</span>
