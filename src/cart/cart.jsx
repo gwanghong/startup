@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import '../list/list.css'; // Use list.css for consistent styling
+import '../list/list.css';
 
 export function Cart() {
   const [cartItems, setCartItems] = useState([]);
 
-  // Load cart items from localStorage when the component mounts
   useEffect(() => {
     const cartText = localStorage.getItem('cartItems');
     if (cartText) {
@@ -12,12 +11,10 @@ export function Cart() {
     }
   }, []);
 
-  // Save cart items to localStorage whenever the cartItems state changes
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
-  // Remove an item from the cart
   const removeFromCart = (restaurantName) => {
     const updatedCart = cartItems.filter((item) => item.name !== restaurantName);
     setCartItems(updatedCart);

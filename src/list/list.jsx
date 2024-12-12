@@ -34,7 +34,6 @@ export function List(props) {
   const addToCart = (restaurant) => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    // Check if the item already exists in the cart
     if (!cartItems.find((item) => item.name === restaurant.name)) {
       cartItems.push(restaurant);
       localStorage.setItem('cartItems', JSON.stringify(cartItems));

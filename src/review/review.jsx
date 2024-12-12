@@ -41,13 +41,11 @@ export function Review({ userName }) {
   const addReview = (e) => {
     e.preventDefault();
 
-    // Add the new review with the userName automatically set
     setReviews([
       ...reviews,
       { ...formData, name: userName, stars: parseInt(formData.stars, 10) },
     ]);
 
-    // Clear the form
     setFormData({
       restaurant: '',
       stars: '',

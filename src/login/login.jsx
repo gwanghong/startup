@@ -2,7 +2,6 @@ import React from 'react';
 import { AuthState } from './authState';
 import { Unauthenticated } from './unauthenticated';
 import { Authenticated } from './authenticated';
-import { NavLink } from 'react-router-dom';
 import '../app.css';
 
 export function Login({ userName, authState, onAuthChange }) {
