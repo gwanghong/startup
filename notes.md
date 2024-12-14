@@ -136,8 +136,85 @@ every:	Run a function to test if all items match	a.every(i => i < 3)
 some:	Run a function to test if any items match	a.some(i => 1 < 1)
 
 # React
+
+React: React combines JavaScript and HTML into its component format. CSS must be declared outside of the JSX file. The component itself leverages the functionality of JavaScript and can be represented as a function or class.
+
 The render function: Whatever is returned from the render function is inserted into the component HTML element.
 
 State: Component state is created by calling the React.useState hook function. The useState function returns a variable that contains the current state and a function to update the state.
 
 Router: A web framework router provides essential functionality for single-page applications. With a multiple-webpage application the headers, footers, navigation, and common components must be either duplicated in each HTML page, or injected before the server sends the page to the browser. React does not have a standard router package, and there are many that you can choose from. 
+
+Angular component: An Angular component defines what JavaScript, HTML, and CSS are combined together. This keeps a fairly strong separation of files that are usually grouped together in a directory rather than using the single file representation.
+
+Reactivity: Reactivity controls how a component reacts to actions taken by the user or events that happen within the application. Whenever a component's state or properties change, the render function for the component and all of its dependent component render functions are called.
+
+Hooks: React hooks allow React function style components to be able to do everything that a class style component can do and more. Additionally, as new features are added to React they are including them as hooks. This makes function style components the preferred way of doing things in React.
+
+# Web Services
+
+<pre>TCP/IP layers
+Layer |	Example |	Purpose<br>
+Application 	HTTPS 	Functionality like web browsing<br>
+Transport 	TCP 	Moving connection information packets<br>
+Internet 	IP 	Establishing connections<br>
+Link 	Fiber, hardware 	Physical connections<br></pre>
+
+domain name system (DNS): The DNS database records that facilitate the mapping of domain names to IP addresses come in several flavors. An A record is a straight mapping from a domain name to IP address. A CNAME record maps one domain name to another domain name.
+
+Uniform Resource Locator (URL): represents the location of a web resource. A web resource can be anything, such as a web page, font, image, video stream, database record, or JSON object. 
+
+Ports: 
+20 	File Transfer Protocol (FTP) for data transfer
+22 	Secure Shell (SSH) for connecting to remote devices
+25 	Simple Mail Transfer Protocol (SMTP) for sending email
+53 	Domain Name System (DNS) for looking up IP addresses
+80 	Hypertext Transfer Protocol (HTTP) for web requests
+110 	Post Office Protocol (POP3) for retrieving email
+123 	Network Time Protocol (NTP) for managing time
+161 	Simple Network Management Protocol (SNMP) for managing network devices such as routers or printers
+194 	Internet Relay Chat (IRC) for chatting
+443 	HTTP Secure (HTTPS) for secure web requests
+
+SOP and CORS:
+ SOP only allows JavaScript to make requests to a domain if it is the same domain that the user is currently viewing. CORS allows the client (e.g. browser) to specify the origin of a request and then let the server respond with what origins are allowed.
+
+ RPC: Remote Procedure Calls (RPC) expose service endpoints as simple function calls. When RPC is used over HTTP it usually just leverages the POST HTTP verb.
+
+ REST: Representational State Transfer (REST) attempts to take advantage of the foundational principles of HTTP. 
+
+ GraphQL: The heart of GraphQL is a query that specifies the desired data and how it should be joined and filtered. 
+
+ Authorization services: Authorization services often use standard protocols for authenticating and authorizing. These include standards such as OAuth, SAML, and OIDC.
+
+ WebSocket:
+ The core feature of WebSocket is that it is fully duplexed. This means that after the initial connection is made from a client, using vanilla HTTP, and then upgraded by the server to a WebSocket connection, the relationship changes to a peer-to-peer connection where either party can efficiently send data at any time.
+
+ UI testing:
+ Test driven development (TDD) is a proven methodology for accelerating application creation, protecting against regression bugs, and demonstrating correctness.
+
+ OWASP:
+ A01 Broken Access Control
+ A02 Cryptographic Failures
+ A03 Injection
+ A04 Insecure Design
+ A05 Security Misconfiguration
+ A06 Vulnerable and Outdated Components
+ A07 Identification and Authentication Failures
+ A08 Software and Data Integrity Failure
+ A09 Security Logging and Monitoring Failures
+ A10 Server Side Request Forgery (SSRF)
+
+Performance monitoring:
+ 
+1. Browser application latency
+2. Network latency
+3. Service endpoint latency
+
+Browser application latency:
+Reduces the impact of file size, and HTTP requests in general
+
+1. Use compression when transferring files over HTTP.
+2. Reduce the quality of images and video to the lowest acceptable level.
+3. Minify JavaScript and CSS. This removes all whitespace and creates smaller variable names.
+4. Use HTTP/2 or HTTP/3 so that your HTTP headers are compressed and the communication protocol is more efficient.
